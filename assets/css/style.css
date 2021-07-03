@@ -1,33 +1,25 @@
 body{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
-.logo, .logochico{
-    font-family: 'Lobster', cursive;
-}
-.linea-abajo{
-    text-decoration: underline;
-}
-.listado p{
-    margin: 0 auto;
-}
-.pad-grande{
-    padding: 9rem 0;
+.isotipo{
+    height: 2rem;
 }
 
-.logo-grande{
-    font-size: 2em;
+.hero{
+    height: 50rem;
+    overflow: hidden;
+}
+.tamano{
+    height: 50rem;
+}
+button{
+width: 100%;
+}
+hr{
+    background-color: #fff;
 }
 
-@media(max-width:530px){
-    .centro{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-hr {
-    border: none;
-    height: 1px;
-    color: #333;
-    background-color: #333;
+.margensuperior{
+    margin-top: 6rem;
 }
