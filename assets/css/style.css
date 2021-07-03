@@ -1,0 +1,33 @@
+body{
+    font-family: 'Cabin', sans-serif;
+}
+.logo, .logochico{
+    font-family: 'Lobster', cursive;
+}
+.linea-abajo{
+    text-decoration: underline;
+}
+.listado p{
+    margin: 0 auto;
+}
+.pad-grande{
+    padding: 9rem 0;
+}
+
+.logo-grande{
+    font-size: 2em;
+}
+
+@media(max-width:530px){
+    .centro{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}

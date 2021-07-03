@@ -1,0 +1,10 @@
+#contenedor {
+    background: red;
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+    }
+    .item {
+    background:red;
+    width: 50%;
+    }
