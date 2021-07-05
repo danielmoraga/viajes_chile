@@ -7,10 +7,22 @@ body{
 }
 
 
+
 .tamano{
-    height: 50rem;
+    height: 20rem;
     overflow: hidden;
 }
+
+@media (min-width:760px){
+    .tamano{
+        height: 50rem;
+        overflow: hidden;
+    }
+    
+
+}
+
+
 button{
 width: 100%;
 }
@@ -45,4 +57,13 @@ article i{
     }
     
 
+}
+
+
+.logo{
+    color: white;
+}
+.logo:hover{
+    color: white;
+    text-decoration: none;
 }

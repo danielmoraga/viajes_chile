@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Viajes Chile</title>
+
   <!--boostrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -49,7 +49,10 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
       </div>
     </div>
   </nav>
+
   <!--hero-->
+
+  <!--
   <section class="hero" id="inicio">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -73,15 +76,45 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
       </a>
     </div>
   </section>
+
+  -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active  tamano">
+        <img class="d-block w-100" src="assets/img/carousel1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item  tamano">
+        <img class="d-block w-100" src="assets/img/carousel2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item  tamano">
+        <img class="d-block w-100" src="assets/img/carousel3.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
   <!--Seccion de articulos-->
 
-  <section class="container my-5 d-none d-md-block ">
-    <h2 class="text-center text-light" id="quienesomos">¿Quienes Somos?</h2>
+  <section class="container my-5 d-none d-md-block" id="quienesomos">
+    <h2 class="text-center text-light">¿Quienes Somos?</h2>
     <hr class="linea">
     <div class="container mt-5">
       <div class="row">
         <article class="col-4">
-          <button class="colorcalipso"><i class="fas fa-plane fa-2x text-center"></i></button>
+          <button class="colorcalipso" type="button" data-toggle="tooltip" data-placement="top"
+            title="Este es un tooltip"><i class="fas fa-plane fa-2x text-center"></i></button>
           <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae nostrum eveniet
             dolore, veniam
             error voluptatem quasi esse eligendi exercitationem corrupti voluptatibus incidunt officia soluta eaque
@@ -100,10 +133,12 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
             ipsum placeat, reiciendis in dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum impedit
             accusamus! Id, repellendus ipsam velit molestias aliquam dignissimos similique ipsum maxime sit adipisci vel
             facilis numquam minima esse in.</p>
-          <button class="colorcalipso"><i class="fas fa-mountain fa-2x text-center"></i></button>
+          <button class="colorcalipso" data-toggle="modal" data-target="#exampleModalCenter"><i
+              class="fas fa-mountain fa-2x text-center"></i></button>
         </article>
         <article class="col-4">
-          <button class="colorcalipso"><i class="fas fa-route fa-2x text-center"></i></button>
+          <button class="colorcalipso" data-toggle="popover" title="Esto es un popover"
+            data-content="Esto es el contenido"><i class="fas fa-route fa-2x text-center"></i></button>
           <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae nostrum eveniet
             dolore, veniam
             error voluptatem quasi esse eligendi exercitationem corrupti voluptatibus incidunt officia soluta eaque
@@ -118,8 +153,8 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
   </section>
   <!--seccion de cards-->
 
-  <main class="container margensuperior">
-    <h2 class="text-center text-light" id="destacados">Destacados</h2>
+  <main class="container margensuperior" id="destacados">
+    <h2 class="text-center text-light">Destacados</h2>
     <hr class="linea">
     <div class="container">
       <div class="row  mx-n2 d-flex justify-content-between">
@@ -156,59 +191,108 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
           </div>
         </div>
       </div>
-    </main>
+  </main>
 
   <!--typeform-->
-  <section class="container margensuperior">
-    <h2 class="text-center text-light" id="contacto">Contacto</h2>
+  <section class="container margensuperior" id="contacto">
+    <h2 class="text-center text-light">Contacto</h2>
     <hr class="linea">
-    <div class="typeform-widget" data-url="https://form.typeform.com/to/w9rd597f?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> 
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/w9rd597f?typeform-medium=embed-snippet"
+      style="width: 100%; height: 500px;"></div>
+    <script>
+      (function () {
+        var qs, js, q, s, d = document,
+          gi = d.getElementById,
+          ce = d.createElement,
+          gt = d.getElementsByTagName,
+          id = "typef_orm",
+          b = "https://embed.typeform.com/";
+        if (!gi.call(d, id)) {
+          js = ce.call(d, "script");
+          js.id = id;
+          js.src = b + "embed.js";
+          q = gt.call(d, "script")[0];
+          q.parentNode.insertBefore(js, q)
+        }
+      })()
+    </script>
   </section>
-  <!--footer-->
 
-  <footer class="navbar navbar-expand-lg navbar-dark colorcalipso margensuperior">
-    <div class="container">
-      <a class="navbar-brand logo" href="#">
+
+  <!--footer-->
+<!--
+  <footer class="colorcalipso margensuperior">
+    <div class="container flex">
+      <div class="ancho logo flex">
+        <a class="logo" href="#">
+          <h3 class="uppercase">Viajes Chile</h3>
+        </a>
+      </div>
+        <div class="iconos d-flex justify-content-end">
+          <a class="nav-link" href="https://github.com/" target="blank"><i class="fab fa-github fa-3x text-white"></i><span
+            class="sr-only">(current)</span></a>
+      
+      
+        <a class="nav-link" href="https://cl.linkedin.com/" target="blank"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+   
+   
+        <a class="nav-link" href="https://twitter.com/?lang=es" target="blank"><i
+            class="fab fa-twitter-square fa-3x text-white"></i></a>
+
+  
+        <a class="nav-link" href="https://www.facebook.com/" target="blank"><i
+            class="fab fa-facebook-square fa-3x text-white"></i></a>
+        </div>  
+           
+  
+   
+  </div>
+  </footer>
+-->
+<footer class="colorcalipso margensuperior">
+  <div class="container">
+    <div class="row align-items-center">
+    <div class="col-sm-12 col-md-4 logo d-flex justify-content-center justify-content-md-start">
+      <a class="logo text-white" href="#">
         <h3 class="uppercase">Viajes Chile</h3>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"><i class="fab fa-github fa-3x"></i><span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-linkedin fa-3x"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-facebook-square fa-3x "></i></a>
-          </li>
-        </ul>
+    </div>
+    <div class="col-sm-12 col-md-8 d-flex justify-content-center justify-content-md-end">
+      <a class="nav-link active" href="https://github.com/" target="blank"><i class="fab fa-github fa-3x text-white"></i><span
+        class="sr-only">(current)</span></a>
+      <a class="nav-link" href="https://cl.linkedin.com/" target="blank"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+      <a class="nav-link" href="https://twitter.com/?lang=es" target="blank"><i
+        class="fab fa-twitter-square fa-3x text-white"></i></a>
+      <a class="nav-link disabled" href="https://www.facebook.com/" target="blank">
+        <i class="fab fa-facebook-square fa-3x text-white"></i></a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
+
+
+
+  <!--contenido del modal-->
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Esto es un modal</h5>
+
+        </div>
+        <div class="modal-body">
+          <p>Esto es una prueba de modal</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar aquí</button>
+        </div>
       </div>
     </div>
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
 
 
 
