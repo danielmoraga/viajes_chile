@@ -6,20 +6,43 @@ body{
     height: 2rem;
 }
 
-.hero{
-    height: 50rem;
-    overflow: hidden;
-}
+
 .tamano{
     height: 50rem;
+    overflow: hidden;
 }
 button{
 width: 100%;
 }
 hr{
-    background-color: #fff;
+    background-color: #17a3b8;
 }
 
 .margensuperior{
     margin-top: 6rem;
+}
+
+.colorcalipso{
+    background-color: #17a3b8;
+}
+.logo h3{
+    text-transform: uppercase;
+}
+
+article i{
+    color: white;
+}
+
+.card{
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width:760px){
+    .card{
+        max-width: 23%;
+    }
+    
+
 }

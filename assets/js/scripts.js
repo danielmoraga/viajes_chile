@@ -1,20 +1,18 @@
 $(function () {
+
   $('[data-toggle="tooltip"]').tooltip();
 
-  $("h3").dblclick(function () {
-    $(this).css({
-      color: "red",
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
     });
-  });
-
-  $("#enviarCorreo").click(function () {
-    alert("El correo fue enviado correctamente");
-  });
-
-  $(".titulo").click(function () {
-    $(".esconder").toggle("slow");
-  });
-
-
 
 });
