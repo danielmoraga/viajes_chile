@@ -66,6 +66,9 @@ article i{
 
 }
 
+.altura-max{
+    max-height: 80rem;
+}
 
 .logo{
     color: white;
