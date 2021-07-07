@@ -10,6 +10,15 @@ $(function () {
     $('#myInput').trigger('focus')
   })
 
+  $("h2").click(function () { //hago un toogle en los hr cuando se hace click en algun titulo h2
+    $("hr").toggle("slow");
+  });
+
+  $(".colorcalipso").mouseover(function () { //cambio color de las card cuando se ponen sobre cada una
+    $(this).css("background-color","blue");
+    
+  });
+
 
   $("a").on('click', function(event) { //funciones para slow scroll
 
@@ -24,22 +33,11 @@ $(function () {
       }
     });
 
+
+    
+
 });
 
 
-(function () {
-  var qs, js, q, s, d = document,
-    gi = d.getElementById,
-    ce = d.createElement,
-    gt = d.getElementsByTagName,
-    id = "typef_orm",
-    b = "https://embed.typeform.com/";
-  if (!gi.call(d, id)) {
-    js = ce.call(d, "script");
-    js.id = id;
-    js.src = b + "embed.js";
-    q = gt.call(d, "script")[0];
-    q.parentNode.insertBefore(js, q)
-  }
-})()
+
 
